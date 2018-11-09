@@ -10,27 +10,27 @@ module.exports = {
     //  配置入口文件
     entries: {
       entry: {
-        app: './src/entries/qianyun-dd/main.js'
+        app: './src/entries/lovers-mapping/main.js'
       },
-      html: 'src/entries/qianyun-dd/index.html'
+      html: 'src/entries/lovers-mapping/index.html'
     },
 
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/zlink-oa-web-workflow': {
-        target: 'http://192.168.1.169:8380/zlink-oa-web-workflow',
+      '/appweb': {
+        target: 'http://www.yana.site/appweb',
         changeOrigin:true,
         pathRewrite: {
-          '^/zlink-oa-web-workflow': ''
+          '^/appweb': ''
         }
       }
     },
 
     // Various Dev Server settings
     host: '192.168.1.169', // can be overwritten by process.env.HOST
-    port: 8000, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 8100, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
